@@ -20,13 +20,24 @@ PRODUCT_RELEASE_NAME := beryllium
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
+TARGET_ARCH := arm64
+OF_MAINTAINER := Rsyd58
+OF_HIDE_NOTCH := 1
+OF_DONT_KEEP_LOG_HISTORY := 1
+OF_ADVANCED_SECURITY := 1
+OF_SPLASH_MAX_SIZE := 4096
+FOX_USE_NANO_EDITOR := 1
+FOX_VARIANT := SE
+OF_FORCE_PREBUILT_KERNEL := 1
+OF_PATCH_AVB20 := 1
+OF_USE_GREEN_LED := 0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=sdm845
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := omni_beryllium
+PRODUCT_NAME := twrp_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
