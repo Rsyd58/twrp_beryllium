@@ -17,7 +17,9 @@
 # Release name
 PRODUCT_RELEASE_NAME := beryllium
 
-$(call inherit-product, build/target/product/embedded.mk)
+# Inherit from common AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
