@@ -14,5 +14,8 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_beryllium.mk
+PRODUCT_MAKEFILES := \
+     $(LOCAL_DIR)/twrp_beryllium.mk
 
+COMMON_LUNCH_CHOICES := \
+    twrp_beryllium-eng
