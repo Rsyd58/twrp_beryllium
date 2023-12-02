@@ -42,6 +42,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_NO_MIUI_PATCH_WARNING=1
 	export OF_USE_GREEN_LED=0
 	export FOX_USE_BASH_SHELL=1
+export OF_ADVANCED_SECURITY=1
 	export FOX_ASH_IS_BASH=1
 	export FOX_USE_NANO_EDITOR=1
 	export FOX_USE_TAR_BINARY=1
@@ -52,7 +53,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_NEW_MAGISKBOOT=1
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
         export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
-
+export OF_DONT_KEEP_LOG_HISTORY=1
         # use system (ROM) fingerprint where available
         export OF_USE_SYSTEM_FINGERPRINT=1
 
@@ -75,6 +76,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_BUILD_TYPE="Beta"
 	export OF_MAINTAINER="Rsyd57"
 	export FOX_VERSION="R12.1"
+ export FOX_VARIANT="SE"
 
 	# Magisk
 	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk.zip
