@@ -41,7 +41,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 	export OF_NO_MIUI_PATCH_WARNING=1
 	export OF_USE_GREEN_LED=0
-
 	export FOX_USE_BASH_SHELL=1
 	export FOX_ASH_IS_BASH=1
 	export FOX_USE_NANO_EDITOR=1
@@ -72,10 +71,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_CLOCK_POS=2
 	export OF_HIDE_NOTCH=1
 
-	# R11.1
+	# R12.1
 	export FOX_BUILD_TYPE="Beta"
-	export OF_MAINTAINER="Sushrut1101"
-	export FOX_VERSION="R11.1_1"
+	export OF_MAINTAINER="Rsyd57"
+	export FOX_VERSION="R12.1"
 
 	# Magisk
 	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk.zip
