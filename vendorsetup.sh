@@ -62,7 +62,8 @@ export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
         export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
         export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
         export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
-
+export FOX_BUILD_TYPE="Official"
+export FOX_BUILD="Official"
 	# Screen Settings
 	export ALLOW_DISABLE_NAVBAR=0
 	export OF_SCREEN_H=2246
@@ -71,7 +72,6 @@ export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
 	export OF_STATUS_INDENT_RIGHT=48
 	export OF_CLOCK_POS=2
 	export OF_HIDE_NOTCH=1
-
 	# R12.1
 	export FOX_BUILD_TYPE="Beta"
 	export OF_MAINTAINER="Rsyd57"
