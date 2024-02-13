@@ -24,7 +24,6 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 FOX_USE_BASH_SHELL := 1
-FOX_USE_NANO_EDITOR := 1
 FOX_USE_TAR_BINARY := 1
 FOX_USE_SED_BINARY := 1
 FOX_USE_XZ_UTILS := 1
